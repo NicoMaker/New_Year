@@ -6,6 +6,11 @@ let ch = window.innerHeight;
 canvas.width = cw;
 canvas.height = ch;
 
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
 window.addEventListener("resize", () => {
   cw = window.innerWidth;
   ch = window.innerHeight;
